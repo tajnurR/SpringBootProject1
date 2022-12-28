@@ -24,7 +24,6 @@ public class UserController {
     @RequestMapping("/register")
     public String registerForm(Model m) {
 
-
         m.addAttribute("user", new User());
         m.addAttribute("title", "Add User");
         return "signup_form";
@@ -40,4 +39,6 @@ public class UserController {
         m.addAttribute("title", "Registration Success");
         return "redirect:/";
     }
+
+
 }
